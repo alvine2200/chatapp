@@ -11,10 +11,8 @@
                        @foreach ($users as $user)
                          <li class="chat-user-list">
                             <a href="#">
-                                <div class="chat-image">
-                                    <div class="name-image bg-primary">
-                                        {{generateName($user->name)}}
-                                    </div>
+                                <div class="chat-image"> 
+                                        {!! generateName($user->name) !!}
                                 </div>
                                 {{$user->name}}
                             </a>
