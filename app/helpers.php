@@ -8,6 +8,6 @@ function generateName($name)
     foreach ($names as $nem) {
         $shortName .= $nem[0];
     }
-    $userImage = '<div class="name-image g-primary">' . $shortName . '</div>';
+    $userImage = '<div class="name-image bg-primary">' . $shortName . '</div>';
     return $userImage;
 }

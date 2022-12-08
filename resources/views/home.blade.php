@@ -11,15 +11,16 @@
                        @foreach ($users as $user)
                          <li class="chat-user-list">
                             <a href="#">
-                                <div class="chat-image"> 
-                                        {!! generateName($user->name) !!}
-                                </div>
-                                {{$user->name}}
+                                <div class="chat-image">
+                                    {!! generateName($user->name) !!}
+                                </div>                                
+                                <div class="chat-name">
+                                    {{$user->name}}
+                                </div>                                
                             </a>
                          </li>  
                       @endforeach     
-                    @endif
-                                    
+                    @endif                                    
                 </ul>
         </div>
     </div>
