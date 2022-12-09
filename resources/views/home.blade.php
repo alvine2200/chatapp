@@ -25,6 +25,12 @@
         </div>
     </div>
     <div class="col-md-9">
+        <h1>
+            Message Section
+        </h1>
+        <p class="lead">
+            Select User from the list to begin conversation
+        </p>
 
     </div>
    </div>
