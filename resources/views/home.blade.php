@@ -10,9 +10,10 @@
                     @if($users->count())
                        @foreach ($users as $user)
                          <li class="chat-user-list">
-                            <a href="#">
+                            <a href="{{url('conversation',$user->id)}}">
                                 <div class="chat-image">
                                     {!! generateName($user->name) !!}
+                                    <i class="fa fa-circle user-status-icon" title="away"></i>
                                 </div>                                
                                 <div class="chat-name">
                                     {{$user->name}}
@@ -25,13 +26,7 @@
         </div>
     </div>
     <div class="col-md-9">
-        <h1>
-            Message Section
-        </h1>
-        <p class="lead">
-            Select User from the list to begin conversation
-        </p>
-
+        Chat Body
     </div>
    </div>
 </div>
