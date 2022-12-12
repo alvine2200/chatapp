@@ -10,3 +10,9 @@ http.listen(port, (error) => {
         console.log("Error occured", error);
     }
 });
+
+io.on("connection", function (socket) {
+    socket.on("user_connected", function (user_id) {
+        console.log("user connected " + user_id);
+    });
+});
